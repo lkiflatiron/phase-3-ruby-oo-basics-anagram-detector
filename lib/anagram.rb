@@ -12,10 +12,9 @@ class Anagram
   end
 
   def match(word_array)
-    #word_array.any? { | entry| sort_chars(@word) == sort_chars(entry) }
     word_array.filter { | entry| sort_chars(@word) == sort_chars(entry)}
   end
 end
 
-listen = Anagram.new("listen")
-p listen.match(%w[enlists google inlets banana])
+# listen = Anagram.new("listen")
+# p listen.match(%w[enlists google inlets banana])
